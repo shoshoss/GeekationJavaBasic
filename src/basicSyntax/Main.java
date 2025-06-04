@@ -182,6 +182,91 @@ public class Main {
 		
 		System.out.println(x3 + intY3);
 		
+		// 5-比較演算子と論理演算子
+		// 1. 比較演算
+		// 等しいかどうか(==)
+		int x4 = 5;
+		int y4 = 10;
+		int z4 = 5;
+		
+		boolean isEqualA = (x4 == y4);
+		boolean isEqualB = (x4 == z4);
+		
+		System.out.println(isEqualA);
+		System.out.println(isEqualB);
+		System.out.println();
+		
+		// 等しくないかどうか(!=)
+		boolean isNotEqualA = (x4 != y4);
+		boolean isNotEqualB = (x4 != z4);
+		
+		System.out.println(isNotEqualA);
+		System.out.println(isNotEqualB);
+		System.out.println();
+		
+		// 大なり(>)
+		boolean isGreaterA = (x4 > y4);
+		boolean isGreaterB = (y4 > x4);
+		boolean isGreaterC = (x4 > z4);
+		
+		System.out.println(isGreaterA); // false
+		System.out.println(isGreaterB); // true
+		System.out.println(isGreaterC); // false
+		System.out.println();
+		
+		// 小なり(<)
+		boolean isLessA = (x4 < y4);
+		boolean isLessB = (y4 < x4);
+		boolean isLessC = (x4 < z4);
+		
+		System.out.println(isLessA); // true
+		System.out.println(isLessB); // false
+		System.out.println(isLessC); // false
+		System.out.println();
+		
+		// 大なりまたは等しい(>=)
+		boolean isGreaterOrEqualA = (x4 >= y4);
+		boolean isGreaterOrEqualB = (y4 >= x4);
+		boolean isGreaterOrEqualC = (x4 >= z4);
+		
+		System.out.println(isGreaterOrEqualA); // false
+		System.out.println(isGreaterOrEqualB); // true
+		System.out.println(isGreaterOrEqualC); // true
+		System.out.println();
+		
+		// 小なりまたは等しい(<=)
+		boolean isLessOrEqualA = (x4 <= y4);
+		boolean isLessOrEqualB = (y4 <= x4);
+		boolean isLessOrEqualC = (x4 <= z4);
+		
+		System.out.println(isLessOrEqualA); // true
+		System.out.println(isLessOrEqualB); // false
+		System.out.println(isLessOrEqualC); // true
+		System.out.println();
+		
+		// 2. 論理演算子
+		// 論理積(&&)
+		boolean andResultA = (x4 < 6 && y4 > 9);
+		boolean andResultB = (x4 < 6 && y4 < 10);
+		
+		System.out.println(andResultA); // true
+		System.out.println(andResultB); // false
+		System.out.println();
+		
+		// 論理和(||)
+		boolean orResultA = (x < 6 || y < 10);
+		boolean orResultB = (x < 5 || y < 10);
+		
+		System.out.println(orResultA); // true
+		System.out.println(orResultB); // false
+		System.out.println();
+		
+		// 論理否定(!)
+		boolean notResult = !(x == y);
+		
+		System.out.println(notResult); // true
+		System.out.println();
+		
 	}
 
 }
