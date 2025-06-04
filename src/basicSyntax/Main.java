@@ -26,6 +26,44 @@ public class Main {
 		System.out.println(5.0 - 0.25);
 		
 		// 真偽値: boolean
+		System.out.println(true);
+	    System.out.println(false);
+	    
+	    // 変数の定義
+	    String name;
+	    int age;
+	    
+	    // 変数に値を代入
+	    name = "Geek君";
+	    age =25;
+	    
+	    // 変数の値を使って任意の処理を行う
+	    System.out.println(name);
+	    System.out.println(age);
+	    
+	    // 変数の初期化
+	    String name2 = "Geek君";
+	    int age2 =25;
+	    
+	    System.out.println(name2);
+	    System.out.println(age2);
+	    
+	    // 変数の更新
+	    name = "生まれ変わったGeek君";
+	    age = 1;
+	    
+	    System.out.println(name);
+	    System.out.println(age);
+	    
+	    // 変数の命名規則, データ型の自動変換
+	    // Javaの変数名は「キャメルケース(Camel Case)」というルールで記述
+	    age = 25;
+	    String firstName = "イケイケ";
+	    String middleName = "ギーク";
+	    String lastName = "太郎";
+	    
+	    // String型にint型を連結すると、String型に自動変換
+	    System.out.println(firstName + middleName + lastName + "の年齢は" + age + "歳です。");
 	}
 
 }
