@@ -331,6 +331,81 @@ public class Main {
 		
 		System.out.println("完了");
 		System.out.println();
+		
+		// 繰り返し処理
+		// 1. 繰り返し処理について
+		// 繰り返し処理は、同じコードを何度も繰り返し実行するための方法
+		// 主要繰り返し処理構造：while文、for文、拡張for文
+		
+		// 2. while文
+		int num = 1;
+		
+		while(num <= 10) {
+			System.out.println(num);
+			
+			num++;
+		}
+		System.out.println();
+		
+		// 3. for文
+		for (int num2 = 1; num2 <=10; num2++) {
+			System.out.println(num2);
+		}
+		System.out.println();
+		
+		// 4. 配列(Array)
+		// 配列の宣言と初期化
+		// 整数型の配列を宣言して初期化
+		// 長さが5の整数型の配列を作成します。格納されている要素の値は全て0です。
+		int[] numbers = new int[5];
+		
+		// 文字列型の配列を宣言して初期化
+		String[] fruits = {"りんご", "バナナ", "オレンジ"};
+		
+		// 配列の要素を操作する
+		// 配列の要素へのアクセス
+		int[] numbers2 = {10, 20, 30, 40, 50};
+		
+		System.out.println(numbers2[0]);
+		System.out.println(numbers2[2]);
+		System.out.println();
+		
+		// 要素を上書きする
+		// 異なるデータ型の値を代入するとエラーになる
+		System.out.println(fruits[1]); // バナナ
+		
+		fruits[1] = "ぶどう";
+		
+		System.out.println(fruits[1]);
+		System.out.println();
+		
+		// 配列の長さを確認する
+		System.out.println(fruits.length);
+		System.out.println();
+		
+		// 要素を追加&削除する
+		// 配列は固定サイズなので、要素の追加や削除が難しい
+		// 配列の代わりに、固定サイズではないArrayListというものがある
+		
+		// 5. 拡張for文
+		// 拡張for文は、配列などのデータ構造の要素を順番に取り出すためのシンプルな方法
+		for (String fruit: fruits) {
+			System.out.println(fruit);
+		}
+		System.out.println();
+		
+		// 6. 繰り返し処理のbreakとcontinue
+		int[] numbers3 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		
+		for (int number3: numbers3) {
+			if (number3 % 3 == 0) {
+				System.out.println("アホになって" + number3 + "と言う");
+				// break;
+				continue;
+			}
+			
+			System.out.println("普通に" + number3 + "と言う");
+		}
 	}
 
 }
