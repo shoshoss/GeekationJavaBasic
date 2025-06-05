@@ -267,6 +267,70 @@ public class Main {
 		System.out.println(notResult); // true
 		System.out.println();
 		
+		// 6-条件分岐
+		// 1. if文
+		// ifの使い方
+		int number =20;
+		
+		System.out.println("更新前");
+		if (number >= 15) {
+			System.out.println("15以上です。");
+		}
+		
+		number = 14;
+		
+		System.out.println("更新後");
+		if (number >= 15) {
+			System.out.println("15以上です。");
+		}
+		
+		System.out.println("完了");
+		System.out.println();
+		
+		// elseの使い方
+		if (number >= 15) {
+			System.out.println("15以上です。");
+		} else {
+			System.out.println("15未満です。");
+		}
+		System.out.println("完了");
+		System.out.println();
+		
+		// else ifの使い方
+		number = 10;
+		if (number >= 20) {
+			System.out.println("20以上です。");
+		} else if (number >= 15) {
+			System.out.println("15以上、10未満です。");
+		} else if (number >= 10) {
+			System.out.println("10以上、15未満です。");
+		} else {
+			System.out.println("10未満です。");
+		}
+		System.out.println("完了");
+		System.out.println();
+		
+		// 2. switch文
+		// switch文を使う場合は、caseやdefaultのブロックに必ずbreakを記述すること
+		int dayOfWeek = 2; // 火曜日
+		
+		switch (dayOfWeek) {
+		case 1:
+			System.out.println("月曜日");
+			break;
+		case 2:
+			System.out.println("火曜日");
+			break;
+		case 3:
+			System.out.println("水曜日");
+			break;
+		default:
+			System.out.println("その他の曜日");
+			break;
+		}
+		
+		System.out.println("完了");
+		System.out.println();
 	}
 
 }
