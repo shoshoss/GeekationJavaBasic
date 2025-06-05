@@ -406,6 +406,86 @@ public class Main {
 			
 			System.out.println("普通に" + number3 + "と言う");
 		}
+		
+		System.out.println();
+		// 8-メソッド
+		// 6,7. メソッドの定義と呼び出される流れ, メソッドの再利用
+		hello();
+		hello();
+		hello();
+		System.out.println();
+		
+		// 8. 引数
+		String[] countryCodes = {"JP", "US", "UK"};
+		
+		int number2 = 1;
+		for (String code: countryCodes) {
+			hello2(code, number2);
+			
+			number2++;
+		}
+		System.out.println();
+		
+		// 9. 戻り値
+		int result = sumNumbers(3, 4);
+		
+		System.out.println(result);
+		System.out.println();
+		
+		// if文の条件にbooleanの戻り値を返すメソッド
+		int targetNum = 2;
+		
+		if (isEven(targetNum)) {
+			System.out.println("偶数です");
+		} else {
+			System.out.println("奇数です");
+		}
+		System.out.println();
+		
+		// 10. オーバーロードについて
+		System.out.println(sumNumbers2(1, 2));
+		System.out.println(sumNumbers2(1, 2, 3));
+		System.out.println(sumNumbers2(2.3, 4.3));
+		
 	}
+	
+	public static void hello() {
+		System.out.println("Hello Geekation");
+	}
+	
+	public static void hello2(String code, int num) {
+		System.out.println("No." + num + ": Hello " + code);
+	}
+	
+	public static int sumNumbers(int num1, int num2) {
+		int sum = num1 + num2;
+		
+		return sum;
+	}
+	
+	public static boolean isEven(int num) {
+		return num % 2 == 0;
+	}
+	
+	public static int sumNumbers2(int num1, int num2) {
+		int sum = num1 + num2;
+		
+		return sum;
+	}
+	
+	// 引数の個数が異なる場合
+	public static int sumNumbers2(int num1, int num2, int num3) {
+		int sum = num1 + num2 + num3;
+		
+		return sum;
+	}
+	
+	// 引数のデータ型が異なる場合
+	public static int sumNumbers2(double num1, double num2) {
+		double sum = num1 + num2;
+		
+		return (int)sum;
+	}
+	
 
 }
