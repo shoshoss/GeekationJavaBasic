@@ -31,12 +31,14 @@ public class Main {
 		// 4. 呼び出す時はインスタンスの生成時に値を設定
 		// ここでインスタンスフィールドに値を設定するだけ
 		Geekdam2 geekdam2A = new Geekdam2("Geekdam一郎", 22);
-		Geekdam2 geekdam2B = new Geekdam2("Geekdam仁郎", 20);
+		Geekdam2 geekdam2B = new Geekdam2("Geekdam仁郎", 20, 175.2);
 		
 		System.out.println(geekdam2A.name);
 		System.out.println(geekdam2A.age);
+		System.out.println(geekdam2A.height); // 一方のコンストラクタにしか設定されていないフィールドには初期値が入ります。
 		System.out.println(geekdam2B.name);
 		System.out.println(geekdam2B.age);
+		System.out.println(geekdam2B.height);
 		
 		}
 
@@ -61,11 +63,20 @@ class Geekdam2 {
 	// 1. インスタンスフィールドを定義
 	public String name;
 	public int age;
+	public double height;
 	
 	// 2. コンストラクタの引数にインスタンスフィールドを渡す
 	Geekdam2(String name, int age) {
 		// 3. `this.インスタンスフィールド名 = インスタンスフィールド名`の形で設定
 		this.name = name;
 		this.age = age;		
+	}
+	
+	// オーバーロードしたコンストラクタ
+	// 同名のメソッドでも 「引数の個数」や「引数のデータ型」が異なれば定義できるという手法
+	Geekdam2(String name, int age, double height) {
+		this.name = name;
+		this.age = age;
+		this.height = height;
 	}
 }
