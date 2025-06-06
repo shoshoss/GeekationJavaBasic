@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -448,7 +450,109 @@ public class Main {
 		System.out.println(sumNumbers2(1, 2));
 		System.out.println(sumNumbers2(1, 2, 3));
 		System.out.println(sumNumbers2(2.3, 4.3));
+		System.out.println();
 		
+		// 10-標準パッケージ
+		List<String> arrayList = new ArrayList<>();
+		
+		// 要素の追加
+		arrayList.add("Apple");
+		arrayList.add("Banana");
+		arrayList.add("Orange");
+		
+		// 要素の取得
+		System.out.println(arrayList.get(0));  // "Apple"
+		System.out.println(arrayList.get(1));  // "Banana"
+		
+		// 要素の削除
+		arrayList.remove("Banana");
+		
+		// 要素の数
+		System.out.println(arrayList.size());  // 2
+		System.out.println();
+		
+		// StringBuilderクラスの使い方
+		// StringBuilderのインスタンスを作成します
+		StringBuilder sb = new StringBuilder();
+
+		// 文字列を追加&結合します
+		sb.append("hoge");
+		sb.append("fuga");
+		// または、メソッドチェーン(メソッドを繋げて)で記述することも可能です。
+		sb.append("hoge").append("fuga");
+
+		// StringBuilderをStringに変換して出力します
+		// SringBuilderクラスはSringBuilder自身を戻り値として返します。そのためStringクラスにキャストしてから出力する必要があります。
+		String result2 = sb.toString();
+		System.out.println(result2);
+		System.out.println();
+		
+		// 使用例
+		StringBuilder sb2 = new StringBuilder();
+		
+		sb2.append("Hello").append(" ").append("Geekation");
+		
+		String result3 = sb2.toString();
+		System.out.println(result3);
+		System.out.println();
+		
+		// insertメソッド(文字列の挿入)
+		// StringBuilderのインスタンスを作成します
+		StringBuilder stringBuilder = new StringBuilder();
+		
+		// 文字列を追加します
+		stringBuilder.append("Hello");
+		stringBuilder.append(" ");
+		stringBuilder.append("World");
+		
+		// 文字列を挿入します
+		stringBuilder.insert(5, ", ");
+		
+		// 特定の位置の文字を置き換えます
+		stringBuilder.replace(6, 7, "there");
+		
+		// 文字列を削除します
+		stringBuilder.delete(11, 12);
+		
+		// StringBuilderを文字列に変換して出力します
+		String result4 = stringBuilder.toString();
+		System.out.println(result4);
+		System.out.println();
+		
+		// replaceメソッド(文字列の置換)
+		// StringBuilderのインスタンスを作成します
+		StringBuilder stringBuilder2 = new StringBuilder();
+		
+		stringBuilder2.append("Hello");
+		stringBuilder2.append(" ");
+		stringBuilder2.append("World");
+		
+		stringBuilder2.insert(5, ", ");
+		
+		// 特定の位置の文字を置き換えます
+		stringBuilder2.replace(6, 7, "there");
+		
+		String result5 = stringBuilder2.toString();
+		System.out.println(result5);
+		System.out.println();
+		
+		// deleteメソッド(文字列の削除)
+		StringBuilder stringBuilder3 = new StringBuilder();
+		
+		stringBuilder3.append("Hello");
+		stringBuilder3.append(" ");
+		stringBuilder3.append("World");
+		
+		stringBuilder3.insert(5, ", ");
+		
+		stringBuilder3.replace(6, 7, "there");
+		
+		// 文字列を削除します
+		stringBuilder3.delete(11, 12);
+		
+		String result6 = stringBuilder3.toString();
+		System.out.println(result6);
+		System.out.println();
 	}
 	
 	public static void hello() {
