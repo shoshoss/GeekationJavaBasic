@@ -3,6 +3,7 @@ package basicSyntax;
 public class Main {
 
 	public static void main(String[] args) {
+		// クラス演習
 		int num1 = 10;
 		int num2 = 5;
 		
@@ -15,5 +16,10 @@ public class Main {
 		System.out.println("引き算の計算結果は" + subtractResult + "です。");
 		System.out.println("掛け算の計算結果は" + multiplyResult + "です。");
 		System.out.println("割り算の計算結果は" + divideResult + "です。");
+		System.out.println();
+		
+		// 実装
+		GeekIntroduction.greeting(15, 150);
+		GeekIntroduction.specialSkill(2,30);
 	}
 }
