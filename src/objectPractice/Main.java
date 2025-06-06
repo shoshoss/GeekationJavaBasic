@@ -39,8 +39,22 @@ public class Main {
 		System.out.println(geekdam2B.name);
 		System.out.println(geekdam2B.age);
 		System.out.println(geekdam2B.height);
+		System.out.println();
 		
-		}
+		Sample sample = new Sample("Geek", "太郎");
+		
+		// 下記のようにゲッターを呼び出してあげることで値の取得が可能になります。
+		System.out.println(sample.getLastName());
+		System.out.println(sample.getFirstName());
+		
+		// 下記のようにセッターを使って値を更新することが可能になります。
+		sample.setLastName("Geekation");
+		sample.setFirstName("二郎");
+		
+		// フィールドの値が更新されていることを確認しましょう。
+		System.out.println(sample.getLastName());
+		System.out.println(sample.getFirstName());
+	}
 
 }
 
