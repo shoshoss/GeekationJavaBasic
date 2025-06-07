@@ -54,6 +54,15 @@ public class Main {
 		// フィールドの値が更新されていることを確認しましょう。
 		System.out.println(sample.getLastName());
 		System.out.println(sample.getFirstName());
+		System.out.println();
+		
+		// 継承
+		// スーパークラス（親クラス）とサブクラス（子クラス）
+		Dog dog = new Dog("しば太郎", "柴犬", 9.5, "セラピードッグ");
+		dog.greeting();
+		
+		Cat cat = new Cat("スコット", "スコティッシュ・フォールド", 3.8);
+		cat.greeting();
 	}
 
 }
