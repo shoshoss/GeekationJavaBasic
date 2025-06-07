@@ -63,6 +63,18 @@ public class Main {
 		
 		Cat cat = new Cat("スコット", "スコティッシュ・フォールド", 3.8);
 		cat.greeting();
+		System.out.println();
+		
+		// オブジェクト指向を振り返ってみようの実装
+		Apartment apartment = new Apartment("いい感じのアパートメント", "山田　マンション太郎", "マンション", 50000000, "3LDK");
+		apartment.propertyData();
+		
+		Land land = new Land("いい感じの土地", "山田　土地太郎", "土地", 8000000, 105.2);
+		land.propertyData();
+		
+//		apartment.setItemName("Geekation");
+//	    System.out.println(apartment.getItemName());
+
 	}
 
 }
